@@ -47,6 +47,11 @@ const sendErrorDev = (err, res) => {
 
 module.exports = (err, req, res, next) => {
   err.statusCode = err.statusCode || 500;
+
+  // vkfbnonmbobmbb
+  // skvnsbsibgnsbpifsbnfb;fnbdglgdndgndg
+  // bdgbdgmbnobnbnpbnbk;bmnanl'nm
+
   err.status = err.status || "error";
 
   if (process.env.NODE_ENV === "production") {
