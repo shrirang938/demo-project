@@ -26,9 +26,10 @@ const sendEmail = async (options) => {
     subject: options.subject,
     text: options.message,
     html: `<p style="font-size:30px">${options.message}</p>`,
+    vvv: "Test Thing",
   };
 
-  await transport.sendMail(mailOptions, function (error, info) {
+  transport.sendMail(mailOptions, function (error, info) {
     if (error) {
       console.log(error);
     } else {
